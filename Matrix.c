@@ -31,12 +31,24 @@ matrix_t* matrix_padStart(matrix_t **matrix, int amount){
 }
 
 matrix_t* matrix_padEnd(matrix_t **matrix, int amount){
-    (*matrix)->data = realloc(matrix,sizeof((*matrix)->data)+amount*sizeof(int));
+    //(*matrix)->data = realloc(matrix,sizeof((*matrix)->data)+amount*sizeof(int));
     return *matrix;
 }
 
 int * matrix_getData(matrix_t **matrix){
     return (*matrix)->data;
+}
+
+void * matrix_2decompose(matrix_t **matrix){
+    void * decomposed; //array of ptrs to the decomposed matrices
+
+    return decomposed;
+}
+
+void * matrix_3decompose(matrix_t **matrix){
+    void * decomposed; //array of ptrs to the decomposed matrices
+
+    return decomposed;
 }
 
 void matrix_print(matrix_t **matrix){

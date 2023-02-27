@@ -13,6 +13,10 @@ matrix_t* matrix_padEnd(matrix_t **matrix, int amount);
 
 int * matrix_getData(matrix_t **matrix);
 
+void * matrix_2decompose(matrix_t **matrix);
+
+void * matrix_3decompose(matrix_t **matrix);
+
 void matrix_print(matrix_t **matrix);
 
 

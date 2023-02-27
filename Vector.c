@@ -1,5 +1,6 @@
+#include <stdint.h>
 
-struct matrix{
-    int size;
-    void *B;
+struct vector{
+    uint16_t length;
+    int *data;
 };
