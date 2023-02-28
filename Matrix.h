@@ -3,7 +3,7 @@
 
 typedef struct matrix matrix_t;
 
-matrix_t* matrix_create(int x, int y, int *data);
+matrix_t* matrix_create(int x, int y, void ** data);
 
 void matrix_free(matrix_t **matrix);
 
